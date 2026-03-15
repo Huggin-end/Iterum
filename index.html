@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iterum | Digital Artist Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Header -->
+    <header class="main-header">
+      <div class="logo">
+        <svg
+          class="logo-icon"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 2L2 7L12 12L22 7L12 2Z"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2 17L12 22L22 17"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M2 12L12 17L22 12"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        ITERUM
+      </div>
+      <nav class="main-nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Socials</a>
+      </nav>
+      <div class="status"><span class="status-dot"></span>Commissions Open</div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="hero-section">
+        <div class="hero-content">
+          <h1 class="fade-in">Digital Art for Roblox</h1>
+          <p class="typing-text fade-in"><span></span></p>
+          <a href="#portfolio" class="btn btn-secondary fade-in btn-float"
+            >See my work →</a
+          >
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section content-section">
+        <div class="section-container">
+          <h2 class="section-title fade-in">Hello, I'm Iterum.</h2>
+          <p class="section-subtitle fade-in">
+            A digital artist focused on the Roblox universe. My passion is to
+            transform ideas into vibrant icons and thumbnails that capture
+            attention and tell a story. With years of experience and attention
+            to detail, I am ready to take your project to the next level.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section content-section">
+        <div class="section-container">
+          <h2 class="section-title fade-in">
+            Price Table <span>1 year experience</span>
+          </h2>
+          <div class="toggle-buttons fade-in">
+            <button class="toggle-btn active" data-target="icon">Icons</button>
+            <button class="toggle-btn" data-target="thumbnail">
+              Thumbnails
+            </button>
+            <button class="toggle-btn" data-target="other-works">
+              Other Works
+            </button>
+          </div>
+
+          <div class="card-container fade-in">
+            <!-- Card para Icons -->
+            <div id="icon" class="card active">
+              <div class="card-header">
+                <h3>Custom Icon</h3>
+                <span>Delivery in 1~10 days</span>
+              </div>
+              <div class="card-price-group">
+                <div class="card-price">$10~20<span>dollar/piece</span></div>
+              </div>
+              <p class="card-description">
+                High-quality icons for your profile or game, tailored to your
+              </p>
+              <ul class="card-benefits">
+                <li>High Resolution</li>
+                <li>Unlimited revisions during the sketch phase</li>
+                <li>Files in PNG & JPG format</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary card-btn btn-float"
+                >Request an Icon</a
+              >
+            </div>
+
+            <!-- Card para Thumbnails -->
+            <div id="thumbnail" class="card">
+              <div class="card-header">
+                <h3>Impactful Thumbnail</h3>
+                <span>Delivery in 1~10 days</span>
+              </div>
+              <div class="card-price-group">
+                <div class="card-price">$15~25<span>dollar/piece</span></div>
+              </div>
+              <p class="card-description">
+                Click-worthy thumbnails, perfect for videos or game maps.
+              </p>
+              <ul class="card-benefits">
+                <li>High Quality</li>
+                <li>Design focused on CTR (Click-Through Rate)</li>
+                <li>Files optimized for YouTube/Roblox</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary card-btn"
+                >Request a Thumbnail</a
+              >
+            </div>
+
+            <!-- Card para Other Works -->
+            <div id="other-works" class="card">
+              <div class="card-header">
+                <h3>Other Works</h3>
+                <span>Delivery in 1~10 days</span>
+              </div>
+              <div class="card-price-group">
+                <div class="card-price">$5~25<span>Dollar/piece</span></div>
+              </div>
+              <p class="card-description">
+                From logos to gamepass icons, I can create a variety of digital
+                art pieces to suit your needs.
+              </p>
+              <ul class="card-benefits">
+                <li>Custom logos</li>
+                <li>Gamepass icons</li>
+                <li>Community art</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary card-btn"
+                >Request Other Art</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section - Carrossel corrigido -->
+      <section id="portfolio" class="portfolio-section content-section">
+        <div class="section-container">
+          <h2 class="section-title fade-in">Portfolio</h2>
+          <p class="section-subtitle fade-in">A sample of my recent work.</p>
+
+          <div class="portfolio-gallery-wrapper">
+            <div class="portfolio-gallery">
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-1.png)"
+              ></div>
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-2.png)"
+              ></div>
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-3.png)"
+              ></div>
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-4.png)"
+              ></div>
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-5.png)"
+              ></div>
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-6.png)"
+              ></div>
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-7.png)"
+              ></div>
+              <div
+                class="portfolio-item fade-in"
+                style="background-image: url(Image/image-8.png)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Socials Section -->
+      <section id="contact" class="socials-section content-section">
+        <div class="section-container">
+          <h2 class="section-title fade-in">Get in Touch</h2>
+          <p class="section-subtitle fade-in">
+            Follow my work or join the community to start a project.
+          </p>
+
+          <div class="social-cards-container">
+            <!-- Card Twitter/X -->
+            <a
+              href="https://x.com/ITERUM666?t=e8MWOivQEjUM__xAt8wTpg&=09"
+              class="social-card fade-in"
+              target="_blank"
+            >
+              <h3>Twitter/X</h3>
+              <div class="card-icon-button x">
+                <img src="Image/x.svg" alt="twitter icon" />
+              </div>
+            </a>
+
+            <!-- Card Discord -->
+            <a
+              href="https://discord.gg/3npQAB2yYT"
+              class="social-card fade-in"
+              target="_blank"
+            >
+              <h3>Discord</h3>
+              <p>Careca lisinha</p>
+              <div class="card-icon-button">
+                <img src="Image/discord.svg" alt="svg discord" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>© 2025 Iterum. All rights reserved.</p>
+        <p class="credit">
+          Designed & Developed by
+          <a href="#" target="_blank" rel="noopener noreferrer">DevSda</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
