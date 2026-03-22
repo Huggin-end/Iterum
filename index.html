@@ -6,10 +6,6 @@
     <title>Iterum | Digital Artist Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="main.css" />
     <script src="main.js" defer></script>
   </head>
@@ -67,7 +63,9 @@
       <!-- Hero Section -->
       <section id="hero" class="hero-section">
         <div class="hero-content">
-          <h1 class="fade-in">Digital Art for Roblox</h1>
+          <h1 class="fade-in">
+            <span class="glow">Digital Art for Roblox</span>
+          </h1>
           <p class="typing-text fade-in"><span></span></p>
           <a href="#portfolio" class="btn btn-secondary fade-in btn-float"
             >See my work →</a
@@ -100,8 +98,9 @@
               Thumbnails
             </button>
             <button class="toggle-btn" data-target="other-works">
-              Other Works
+              Custom Vectors
             </button>
+            <button class="toggle-btn combo" data-target="combo">Combos</button>
           </div>
 
           <div class="card-container fade-in">
@@ -109,20 +108,23 @@
             <div id="icon" class="card active">
               <div class="card-header">
                 <h3>Custom Icon</h3>
-                <span>Delivery in 1~10 days</span>
+                <span>Delivery in 3 days</span>
               </div>
               <div class="card-price-group">
-                <div class="card-price">$10~20<span>dollar/piece</span></div>
+                <div class="card-price">$10<span>dollar/piece</span></div>
+                <div class="card-price">$4k<span>Robux/Tax Covered</span></div>
               </div>
               <p class="card-description">
-                High-quality icons for your profile or game, tailored to your
+                High-quality icons for your profile or game, tailored to your.
+                The price may exceed that if the deadline is too tight or the
+                order was too complicated
               </p>
               <ul class="card-benefits">
                 <li>High Resolution</li>
                 <li>Unlimited revisions during the sketch phase</li>
                 <li>Files in PNG & JPG format</li>
               </ul>
-              <a href="#contact" class="btn btn-primary card-btn btn-float"
+              <a href="#contact" class="btn btn-primary card-btn btn-float invert"
                 >Request an Icon</a
               >
             </div>
@@ -131,48 +133,75 @@
             <div id="thumbnail" class="card">
               <div class="card-header">
                 <h3>Impactful Thumbnail</h3>
-                <span>Delivery in 1~10 days</span>
+                <span>Delivery in 3 days</span>
               </div>
               <div class="card-price-group">
-                <div class="card-price">$15~25<span>dollar/piece</span></div>
+                <div class="card-price">$20<span>dollar/piece</span></div>
+                <div class="card-price">
+                  $6.5k<span>Robux/Tax Covered</span>
+                </div>
               </div>
               <p class="card-description">
-                Click-worthy thumbnails, perfect for videos or game maps.
+                Click-worthy thumbnails, perfect for videos or game maps. The
+                price may exceed that if the deadline is too tight or the order
+                was too complicated
               </p>
               <ul class="card-benefits">
                 <li>High Quality</li>
                 <li>Design focused on CTR (Click-Through Rate)</li>
-                <li>Files optimized for YouTube/Roblox</li>
+                <li>Files optimized for Roblox</li>
               </ul>
-              <a href="#contact" class="btn btn-primary card-btn"
+              <a href="#contact" class="btn btn-primary card-btn invert"
                 >Request a Thumbnail</a
               >
             </div>
-
             <!-- Card para Other Works -->
             <div id="other-works" class="card">
               <div class="card-header">
-                <h3>Other Works</h3>
-                <span>Delivery in 1~10 days</span>
+                <h3>Custom Vectors</h3>
+                <span>Delivery in 3 days</span>
               </div>
               <div class="card-price-group">
-                <div class="card-price">$5~25<span>Dollar/piece</span></div>
+                <div class="card-price">
+                  $30<span>up to 6 vectors/day</span>
+                </div>
+                <div class="card-price">
+                  $9.5k<span>Robux/Tax Covered</span>
+                </div>
               </div>
               <p class="card-description">
-                From logos to gamepass icons, I can create a variety of digital
-                art pieces to suit your needs.
+                Up to 6 vectors can be delivered per day! Bigger orders means
+                bigger discounts. The price may exceed that if the deadline is
+                too tight or the order was too complicated
               </p>
               <ul class="card-benefits">
-                <li>Custom logos</li>
-                <li>Gamepass icons</li>
-                <li>Community art</li>
+                <li>Stylized</li>
+                <li>Unique</li>
+                <li>High Quality</li>
               </ul>
-              <a href="#contact" class="btn btn-primary card-btn"
-                >Request Other Art</a
+              <a href="#contact" class="btn btn-primary card-btn invert"
+                >Contact</a
+              >
+            </div>
+            <div id="combo" class="card">
+              <div class="card-header">
+                <h3>Combo</h3>
+              </div>
+              <div class="card-price-group">
+                <div class="card-price">$25<span>dollar/combo</span></div>
+                <div class="card-price">$8k<span>Robux</span></div>
+              </div>
+              <p class="card-description card-text">
+                Would you like a two-piece set? You can message me on Discord.
+                You can create a custom bundle of your choice
+              </p>
+              <a href="#contact" class="btn btn-primary card-btn invert"
+                >Contact</a
               >
             </div>
           </div>
         </div>
+        <p class="warning">Bigger orders means bigger discounts</p>
       </section>
 
       <!-- Portfolio Section - Carrossel corrigido -->
@@ -183,38 +212,33 @@
 
           <div class="portfolio-gallery-wrapper">
             <div class="portfolio-gallery">
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-1.png)"
-              ></div>
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-2.png)"
-              ></div>
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-3.png)"
-              ></div>
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-4.png)"
-              ></div>
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-5.png)"
-              ></div>
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-6.png)"
-              ></div>
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-7.png)"
-              ></div>
-              <div
-                class="portfolio-item fade-in"
-                style="background-image: url(Image/image-8.png)"
-              ></div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-1.png" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-2.png" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-3.png" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-4.png" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-5.png" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-6.png" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-7.png" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-8.jpeg" alt="" />
+              </div>
+              <div class="portfolio-item fade-in">
+                <img src="Image/image-9.jpeg" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -244,11 +268,10 @@
             <!-- Card Discord -->
             <a
               href="https://discord.gg/3npQAB2yYT"
-              class="social-card fade-in"
+              class="social-card fade-in discord"
               target="_blank"
             >
               <h3>Discord</h3>
-              <p>Careca lisinha</p>
               <div class="card-icon-button">
                 <img src="Image/discord.svg" alt="svg discord" />
               </div>
