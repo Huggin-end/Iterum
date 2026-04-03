@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. CURSOR PERSONALIZADO
   const cursor = document.querySelector(".cursor");
   const interactiveElements = document.querySelectorAll(
-    "a, button, .toggle-btn, .portfolio-item",
+    "a, button, .toggle-btn",
   );
 
   document.addEventListener("mousemove", (e) => {
@@ -79,6 +79,57 @@ document.addEventListener("DOMContentLoaded", () => {
       threshold: 0.5,
     },
   );
+
+  // DUPLICAR ITENS PARA LOOP INFINITO
+  const tracks = document.querySelectorAll(".portfolio-track");
+
+  function setupCarousel(track) {
+    // remove clones antigos
+    track.querySelectorAll(".clone").forEach((el) => el.remove());
+
+    const items = [...track.children];
+
+    // duplica sempre, independente do tamanho da tela
+    items.forEach((item) => {
+      const clone = item.cloneNode(true);
+      clone.classList.add("clone");
+      track.appendChild(clone);
+    });
+  }
+  
+  tracks.forEach((track) => {
+    const itemsCount = track.children.length;
+    track.style.animationDuration = `${itemsCount * 2}s`; // 2s por item
+  });
+
+  // init
+  function initCarousels() {
+    tracks.forEach((track) => setupCarousel(track));
+  }
+  initCarousels();
+
+  // resize inteligente
+  let resizeTimeout;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(initCarousels, 200);
+  });
+
+  // pausa fora da tela
+  const wrapper = document.querySelector(".portfolio-wrapper");
+  const observer1 = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        tracks.forEach((track) => {
+          track.style.animationPlayState = entry.isIntersecting
+            ? "running"
+            : "paused";
+        });
+      });
+    },
+    { threshold: 0.2 },
+  );
+  if (wrapper) observer1.observe(wrapper);
 
   sections.forEach((section) => {
     navObserver.observe(section);
