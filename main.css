@@ -451,6 +451,11 @@ body {
 
 /* Portfolio Section*/
 
+.portfolio-section {
+  width: 100%;
+  height: clamp(680px, 730px, 850px);
+}
+
 .portfolio-wrapper {
   display: flex;
   flex-direction: column;
@@ -735,6 +740,9 @@ body {
   .section-title {
     font-size: 4.5rem;
     margin-right: 0;
+  } 
+  .cursor {
+    display: none;
   }
   .toggle-buttons {
     gap: 2rem;
@@ -753,6 +761,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
   .main-nav {
     position: absolute;
     top: 100%;

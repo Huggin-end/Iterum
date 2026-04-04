@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       track.appendChild(clone);
     });
   }
-  
+      
   tracks.forEach((track) => {
     const itemsCount = track.children.length;
     track.style.animationDuration = `${itemsCount * 2}s`; // 2s por item
